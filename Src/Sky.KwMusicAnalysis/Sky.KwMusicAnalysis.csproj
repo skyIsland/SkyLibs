@@ -8,8 +8,4 @@
     <PackageReference Include="AngleSharp" Version="0.9.9.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Sky.Common\Sky.Common.csproj" />
-  </ItemGroup>
-
 </Project>

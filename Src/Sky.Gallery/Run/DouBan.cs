@@ -115,7 +115,7 @@ namespace Sky.Gallery
         /// <param name="savePath">保存路径</param>
         /// <param name="cid">分类ID</param>
         /// <param name="index">页码</param>
-        private void Do_Task(string savePath, int cid, int index)
+        private void DoTask(string savePath, int cid, int index)
         {
             if (!Directory.Exists(savePath))
             {
@@ -129,7 +129,7 @@ namespace Sky.Gallery
             var imageList = GetListBelle(url);
 
             // 日志
-            SimpleLog.WriteLogs(string.Format("开始抓取cid ={0} 第 {1}页", cid, index));
+            SimpleLog.WriteLogs($"开始抓取cid ={cid} 第 {index}页");
 
             //开始下载
             foreach (var img in imageList)
@@ -157,18 +157,18 @@ namespace Sky.Gallery
                         try
                         {
                             wc.DownloadFile(imgUrl, Path.Combine(savePath + "\\" + dirImageCount.Length, Path.GetFileName(imgUrl)));
-                            SimpleLog.WriteLogs(string.Format("{0} 下载成功", imgUrl));
+                            SimpleLog.WriteLogs($"{imgUrl} 下载成功");
                         }
                         catch (Exception ex)
                         {
-                            SimpleLog.WriteLogs(string.Format("{0} 下载失败 {1} 路径{2} 堆栈{3}", imgUrl,ex.Message,ex.Source,ex.StackTrace));
+                            SimpleLog.WriteLogs($"{imgUrl} 下载失败 {ex.Message} 路径{ex.Source} 堆栈{ex.StackTrace}");
                         }
                     }
                     ImageUrlList.Add(img.ImageUrl);
                 }
             }
             // 递归调用
-            Do_Task(savePath, cid, index + 1);
+            DoTask(savePath, cid, index + 1);
         }
 
         /// <summary>
@@ -181,7 +181,7 @@ namespace Sky.Gallery
                 // 还是开一个任务吧
                 Task.Factory.StartNew(() =>
                 {
-                    Do_Task(FilesSaveSrc+"\\"+cid, cid, 1);
+                    DoTask(FilesSaveSrc+"\\"+cid, cid, 1);
                 });
             }
         }

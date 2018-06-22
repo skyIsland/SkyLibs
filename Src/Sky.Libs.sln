@@ -5,7 +5,13 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sky.Gallery", "Sky.Gallery\Sky.Gallery.csproj", "{0FB25465-4C0B-4C16-92F2-327252864998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sky.WxBot", "Sky.WxBot\Sky.WxBot.csproj", "{DEA68D8E-66E7-4B22-908A-91151D80EC5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sky.WxBot", "Sky.WxBot\Sky.WxBot.csproj", "{DEA68D8E-66E7-4B22-908A-91151D80EC5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sky.KwMusicAnalysis", "Sky.KwMusicAnalysis\Sky.KwMusicAnalysis.csproj", "{013444D9-1D79-469E-B8BE-97437F08D9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sky.Test", "Sky.Test\Sky.Test.csproj", "{696B02BA-62E3-4692-AA6F-1D138E22E354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sky.Common", "Sky.Common\Sky.Common.csproj", "{EE0DBF9B-184D-410F-98C9-1F76D2C73D9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{DEA68D8E-66E7-4B22-908A-91151D80EC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEA68D8E-66E7-4B22-908A-91151D80EC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEA68D8E-66E7-4B22-908A-91151D80EC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013444D9-1D79-469E-B8BE-97437F08D9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013444D9-1D79-469E-B8BE-97437F08D9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013444D9-1D79-469E-B8BE-97437F08D9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013444D9-1D79-469E-B8BE-97437F08D9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696B02BA-62E3-4692-AA6F-1D138E22E354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696B02BA-62E3-4692-AA6F-1D138E22E354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696B02BA-62E3-4692-AA6F-1D138E22E354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696B02BA-62E3-4692-AA6F-1D138E22E354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0DBF9B-184D-410F-98C9-1F76D2C73D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0DBF9B-184D-410F-98C9-1F76D2C73D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0DBF9B-184D-410F-98C9-1F76D2C73D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0DBF9B-184D-410F-98C9-1F76D2C73D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
