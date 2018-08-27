@@ -12,7 +12,7 @@ using Sky.Models;
 namespace Sky.Gallery
 {
     /// <summary>
-    /// 豆瓣图片处理 url:https://www.dbmeinv.com/dbgroup/show.htm
+    /// 豆瓣图片处理 url:https://www.dbmeinv.com/index.htm
     /// </summary>
     public class DouBan
     {
@@ -27,7 +27,7 @@ namespace Sky.Gallery
         /// <summary>
         /// 豆瓣地址
         /// </summary>
-        private string DouBanUrl = "https://www.dbmeinv.com/dbgroup/show.htm?cid={0}&pager_offset={1}";
+        private string DouBanUrl = "https://www.dbmeinv.com/index.htm?cid={0}&pager_offset={1}";
         /// <summary>
         /// 已下载图片链接
         /// </summary>
@@ -87,7 +87,7 @@ namespace Sky.Gallery
             if (cid == 0) cid = Ids[new Random().Next(Ids.Length)];
 
             // 豆瓣地址
-            var address = string.IsNullOrWhiteSpace(url) ? "https://www.dbmeinv.com/dbgroup/show.htm?cid=" + cid : url;
+            var address = string.IsNullOrWhiteSpace(url) ? "https://www.dbmeinv.com/index.htm?cid=" + cid : url;
 
             // 请求豆辨网
             var document = GetHtmlDocumet(address);
